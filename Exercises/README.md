@@ -17,23 +17,28 @@ En esta carpeta se encuentran los ejercicios que hice para la materia.
 ## Descripción por ejercicio 
 
   <ol> 
-  <li>Videogame</li>
+  <li>Videogame :space_invader:</li>
   Clase que permite representar de manera genérica un Videojuego
-  <br>
-  <li>Player</li>
+  <br><br>
+  <li>Player :video_game: </li>
   Clase que permite representar de manera genérica a un Jugador de un Videojuego
-  <br>
-  <li>Board</li>
+  <br><br>
+  <li>Board :dart:</li>
   Clase que permite representar un tablero de un juego de mesa
-  <li>Dice</li>
+  <br><br>
+  <li>Dice :game_die:</li>
   Clase que permite representar de manera genérica un dado
-  <li>Scoreboard</li>
+  <br><br>
+  <li>Scoreboard :trophy:</li>
   Clase que representa el tablero de scores de un partido de básquetbol
-  <li>Employee</li>
+  <br><br>
+  <li>Employee :briefcase:</li>
   Clase que permite calcular los impuestos de un empleado
-  <li>Date</li>
+  <br><br>
+  <li>Date :calendar:</li>
   Clase que permite representar fechas en diferentes estilos
-  <li>Person</li>
+  <br><br>
+  <li>Person :older_woman: :woman: :girl:</li>
   Clase que permite modelar una persona. <br>
   Los atributos que se requieren son: nombre, edad y mamá (que también es una persona). 
   </ol>
