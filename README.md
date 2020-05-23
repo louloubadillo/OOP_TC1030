@@ -6,8 +6,8 @@ Desarrollados po: Lourdes Badillo
 
 ## Descripción de carpetas
 
-  ### Exercises :pencil:
+  ### :file_folder: Exercises
   Esta carpeta contiene diversos ejercicios que hice durante el bloque.  
   
-  ### TC1030 - T1 - A01024232 :snake:
+  ### :file_folder: TC1030 - T1 - A01024232
   Esta carpeta contiene los archivos de la primera tarea, donde se realiza una simulación para una version simplificada y modificada del juego de Serpientes y Escaleras. 
