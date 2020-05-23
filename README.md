@@ -1,2 +1,6 @@
-# OOP_TC1030
-Exercises for class TC1030 Feb-June 2020
+# OOP_TC1030 :computer:
+Exercises for class TC1030 <br>
+Semester: Feb-June 2020
+Professor: Ariel Lucien
+Developed by Lourdes Badillo
+
