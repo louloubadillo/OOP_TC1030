@@ -37,3 +37,21 @@ En esta carpeta se encuentran los ejercicios que hice para la materia.
   Clase que permite modelar una persona. <br>
   Los atributos que se requieren son: nombre, edad y mamá (que también es una persona). 
   </ol>
+  
+  ## ¿Cómo ejecutar cada ejercicio? 
+  1. Clonar el repositorio
+  ```bash
+  git clone https://github.com/louloubadillo/OOP_TC1030.git
+  ```
+  2. Moverse a la carpeta que contenga el ejercicio que se quiere compilar
+  ```bash
+  cd Exercises/Carpeta
+  ```
+  3. Compilar los archivos .cpp
+  ```bash
+  g++ *.cpp
+  ```
+  4. Correr el ejecutable
+  ```bash
+  ./a.out
+  ```
