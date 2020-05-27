@@ -1,8 +1,8 @@
 # OOP_TC1030 :computer:
 Ejercicios para la clase TC1030 <br>
-Semestre: Feb-June 2020 <br>
+Semestre: Feb-Jun 2020 <br>
 Profesor: Ariel Lucien <br>
-Desarrollados po: Lourdes Badillo
+Desarrollados por: Lourdes Badillo
 
 ## Descripción de carpetas
 
