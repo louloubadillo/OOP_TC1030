@@ -1,6 +1,7 @@
 //main
 #include <iostream>
-#include"Board.h"
+#include "Board.h"
+#include "Player.h"
 using namespace std;
 class MyGame{
     public: 
