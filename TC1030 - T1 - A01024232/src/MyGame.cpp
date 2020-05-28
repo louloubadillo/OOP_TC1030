@@ -56,18 +56,25 @@ void MyGame::newTurn(){
     }
     int rolled = dice.roll(); 
     int newSquare = actualPlayer.getActualSquare() + rolled; 
-    int move = board.getMovement(newSquare);
-    char type = board.getType(newSquare);
+    int move = board.getMovement((newSquare-1));
+    char type = board.getType((newSquare-1));
     int finalSquare = newSquare + move; 
     if(finalSquare >= 30){
-        finalSquare = 30; 
+        finalSquare = 30;
+        type = 'N';  
         cout << turn <<" "<< actualPlayer.getId()<<" "<<actualPlayer.getActualSquare()<<" "<<rolled<<" "<<type<<" "<<finalSquare<< endl; 
         cout << "--GAME OVER--" << endl;
-        cout << actualPlayer.getId() << " is the winner!" << endl; 
+        cout << "Player " <<actualPlayer.getId() << " is the winner!" << endl; 
         exit(0);
     }
     cout << turn <<" "<< actualPlayer.getId()<<" "<<actualPlayer.getActualSquare()<<" "<<rolled<<" "<<type<<" "<<finalSquare<< endl; 
     actualPlayer.setActualSquare(finalSquare);
+    cout << "debug: " << actualPlayer.getActualSquare() << endl; 
+    if (turn % 2 == 0){
+        players[1].setActualSquare(finalSquare);
+    }else{
+         players[0].setActualSquare(finalSquare);
+    }
     setTurn(turn+1);
 
     if(getTurn() > maxTurns){

@@ -2,9 +2,9 @@
 #include "Player.h" 
 using namespace std; 
 
-Player::Player(int n){
+Player::Player(int n, int a){
     this->id = n; 
-    this->actualSquare = 1; 
+    this->actualSquare = a; 
 } 
 
 int Player::getId(){
@@ -15,6 +15,6 @@ int Player::getActualSquare(){
     return actualSquare; 
 } 
 
-void Player::setActualSquare(int actualSquare){
-    this->actualSquare = actualSquare; 
+void Player::setActualSquare(int s){
+    this->actualSquare = s; 
 } 

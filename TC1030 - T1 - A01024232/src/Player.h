@@ -8,7 +8,7 @@ class Player{
 
     public: 
         Player() = default; 
-        Player(int n); 
+        Player(int n, int a); 
         int getId(); 
         int getActualSquare(); 
         void setActualSquare(int s); 
