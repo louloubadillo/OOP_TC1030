@@ -24,8 +24,12 @@ int Board::getMovement(int i){
         return 3;
     }
     else{
-        return 1; 
+        return 0; 
     }
+}
+
+char Board::getType(int i){
+    return squares[i]; 
 }
 
 void Board::printBoard(){

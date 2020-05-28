@@ -7,7 +7,7 @@ class Player{
     int actualSquare; 
 
     public: 
-        int totalPlayers = 1; 
+        Player() = default; 
         Player(int n); 
         int getId(); 
         int getActualSquare(); 

@@ -11,7 +11,6 @@ Dice::Dice(int faces){
 }
 
 Dice::~Dice(){
-    cout << "Dice destructor" << endl; 
 }
 
 int Dice::getFaces(){

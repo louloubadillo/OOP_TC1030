@@ -7,8 +7,8 @@ class Board{
 
     public: 
         Board(); 
-        ~Board(); 
-        int getId(); 
+        //~Board(); 
+        char getType(int i); 
         int getMovement(int i); 
         void printBoard(); 
 };

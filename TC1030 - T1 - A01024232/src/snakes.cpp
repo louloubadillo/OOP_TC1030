@@ -1,17 +1,13 @@
-//main
 #include <iostream>
-#include "Board.h"
-#include "Player.h"
+#include"MyGame.h"
 using namespace std;
-class MyGame{
-    public: 
-        void start(){
-            cout << "started" << endl; 
-        }
-};
 
 int main(){
+    srand(time(0));
     MyGame g; 
-    g.start(); 
+    Player p1(1); 
+    Player p2(2);
+    g.setPlayers(p1, p2);
+    g.start();
     return 0; 
 }
