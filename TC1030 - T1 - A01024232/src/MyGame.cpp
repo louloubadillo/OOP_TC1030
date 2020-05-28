@@ -48,7 +48,6 @@ void MyGame::menu(){
 
 void MyGame::newTurn(){ 
     int turn = getTurn(); 
-    cout << "turn = " << turn << endl; 
     if (turn % 2 == 0){
         actualPlayer = players[1];
     }else{
@@ -68,8 +67,6 @@ void MyGame::newTurn(){
         exit(0);
     }
     cout << turn <<" "<< actualPlayer.getId()<<" "<<actualPlayer.getActualSquare()<<" "<<rolled<<" "<<type<<" "<<finalSquare<< endl; 
-    actualPlayer.setActualSquare(finalSquare);
-    cout << "debug: " << actualPlayer.getActualSquare() << endl; 
     if (turn % 2 == 0){
         players[1].setActualSquare(finalSquare);
     }else{
