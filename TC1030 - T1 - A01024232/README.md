@@ -9,7 +9,7 @@
   ```
   2. Moverse a la carpeta que contenga el ejercicio que se quiere compilar
   ```bash
-  cd TC1030-T1-A01024232/src
+  cd TC1030 - T1 - A01024232/src
   ```
   3. Compilar los archivos .cpp
   ```bash
