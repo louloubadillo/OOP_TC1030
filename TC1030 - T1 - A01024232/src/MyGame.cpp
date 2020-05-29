@@ -41,7 +41,7 @@ void MyGame::menu(){
             break; 
         default:
             cout << "Invalid option, please press C to continue next turn or E to end the game" << endl; 
-            //menu()
+            menu()
             break; 
     }
 }
