@@ -1,9 +1,10 @@
 #include <iostream>
 #include "Video.h"
+#include "Ratable.h"
 using namespace std;
 #pragma once
 
-class Episode : public Video{
+class Episode : public Video, public Ratable{
     int id; 
     string name; 
     int episodeRating; 
@@ -12,5 +13,5 @@ class Episode : public Video{
         Episode(int id, string name, int episodeRating);
         int getId(); 
         string getName(); 
-        int getEpisodeRating(); 
+        int getRating(); 
 }; 

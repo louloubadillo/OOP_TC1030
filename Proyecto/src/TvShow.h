@@ -1,11 +1,12 @@
 #include <iostream>
+#include "Ratable.h"
 #include "Season.h"
 #include <vector>
 #include <string>
 using namespace std;
 #pragma once
 
-class TvShow{
+class TvShow : public Ratable{
     string name;
     int id; 
     int tvShowRating; 
@@ -16,8 +17,7 @@ class TvShow{
         TvShow(); 
         string getName(); 
         int getId(); 
-        vector<Season> getallSeasons(); 
-        void addSeason(Season);
-        int getTvShowRating(); 
-
+        vector<Season> getAllSeasons(); 
+        void addSeason(Season*);
+        int getRating(); 
 };
