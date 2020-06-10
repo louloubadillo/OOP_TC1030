@@ -16,3 +16,6 @@
   ```bash
   ./a.out
   ```
+## Diagrama UML
+Este es el diagrama de clases del programa: <br><br>
+![UML Diagram](uml.png)
