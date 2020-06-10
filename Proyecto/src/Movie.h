@@ -7,7 +7,7 @@ using namespace std;
 
 class Movie : public Video, public Printable{
     public: 
-        Movie(int id, string name, int duration, string gender);
+        Movie(string name, int duration, string gender);
         void printInformation(); 
 
 }; 

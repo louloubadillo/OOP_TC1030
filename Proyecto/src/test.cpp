@@ -1,25 +1,46 @@
 #include <iostream>
 #include <string>
 #include "Movie.h"
-#include "Episode.h"
+#include "TvShow.h"
 using namespace std;
 
 int main(){
+    //Create content
+    Movie a("Seven Souls", 130, "Drama"); 
+    Movie b("Harry Potter",120,"Fiction");
+    TvShow L("Lucifer"); 
+    Season L1("Lucifer 1"); 
+    Season L2("Lucifer 2"); 
+    Episode LS1E1("Pilot",40,"Comedy"); 
+    Episode LS1E2("LA",40,"Comedy"); 
+    Episode LS1E3("Cain",40,"Comedy"); 
+    Episode LS2E1("Welcome Back", 42, "Comedy");
+    //Add to TvShow
+    L1.addEpisode(&LS1E1); 
+    L1.addEpisode(&LS1E2); 
+    L1.addEpisode(&LS1E3); 
+    L2.addEpisode(&LS2E1); 
+    L.addSeason(&L1); 
+    L.addSeason(&L2);
+    //Add Ratings
+    a.setRating(3); 
+    a.setRating(2); 
+    a.setRating(4); 
+    a.setRating(2);
+    b.setRating(4); 
+    b.setRating(3); 
+    LS1E1.setRating(5); 
+    LS1E2.setRating(3); 
+    LS1E3.setRating(4); 
+    LS2E1.setRating(5);
+    //Print Info
+    a.printInformation(); 
+    b.printInformation(); 
+    L.printInformation(); 
+    L1.printInformation(); 
+    L2.printInformation(); 
+    LS1E1.printInformation(); 
+    LS1E2.printInformation(); 
 
-    Video example(0,"HP",90, "Drama"); 
-    cout << example.getGender() << endl;
-    example.setRating(5);
-    example.setRating(3);
-    example.setRating(3);
-    cout << example.getRating() << endl; 
-    Movie hp(1,"HP",100,"Fantasy");
-    hp.setRating(2);
-    hp.setRating(5); 
-    cout << hp.getRating() << endl; 
-    hp.printInformation(); 
-    Episode one(4,"Hello",20,"Terror");
-    one.setRating(4);
-    one.setRating(2); 
-    one.printInformation(); 
     return 0; 
 }

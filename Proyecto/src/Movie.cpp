@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-Movie::Movie(int id, string name, int duration, string gender):Video(id, name, duration, gender){
+Movie::Movie(string name, int duration, string gender):Video(name, duration, gender){
 
 }
 void Movie::printInformation(){

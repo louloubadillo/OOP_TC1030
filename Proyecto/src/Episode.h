@@ -8,6 +8,6 @@ using namespace std;
 class Episode : public Video, public Printable{
 
     public: 
-        Episode(int id, string name, int duration, string gender);
+        Episode(string name, int duration, string gender);
         void printInformation(); 
 }; 

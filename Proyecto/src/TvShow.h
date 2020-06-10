@@ -1,28 +1,23 @@
 #include <iostream>
-//#include "Ratable.h"
-//#include "Season.h"
-//#include <vector>
-//#include <string>
+#include "Rateable.h"
+#include "Printable.h"
+#include "Season.h"
+#include <vector>
+#include <string>
 using namespace std;
 #pragma once
 
-class TvShow : public Ratable{
+class TvShow: public Rateable, public Printable{
     string name;
-    static int counter;
-    int id; 
-    int tvShowRating; 
-    vector<Season> allSeasons; 
-    int seasonQuantity; 
+    vector<Season*> seasons; 
+    double rating;
 
     public: 
-        TvShow(string, int); 
+        TvShow(string name); 
         string getName(); 
-        void setName(); 
-        int getId(); 
-        void setId();
-        vector<Season> getAllSeasons(); 
+        vector<Season*> getAllSeasons(); 
         void addSeason(Season*);
-        int getRating(); 
+        double getRating(); 
+        void printInformation(); 
 };
 
-int TvShow::counter = 0;

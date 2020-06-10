@@ -3,7 +3,7 @@
 #include <string>
 using namespace std; 
 
-Episode::Episode(int id, string name, int duration, string gender):Video(id, name, duration, gender){
+Episode::Episode(string name, int duration, string gender):Video(name, duration, gender){
 
 }
 void Episode::printInformation(){

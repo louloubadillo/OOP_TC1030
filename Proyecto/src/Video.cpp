@@ -2,7 +2,11 @@
 #include "Video.h"
 using namespace std; 
 
-Video::Video(int id, string name, int duration, string gender){
+int Video::counter = 0; 
+
+Video::Video(string name, int duration, string gender){
+    this->id = counter+1; 
+    counter++;
     this->id = id; 
     this->name = name; 
     this-> duration = duration; 
