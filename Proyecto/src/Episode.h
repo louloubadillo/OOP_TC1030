@@ -1,17 +1,13 @@
 #include <iostream>
 #include "Video.h"
-#include "Ratable.h"
+#include "Rateable.h"
+#include "Printable.h"
 using namespace std;
 #pragma once
 
-class Episode : public Video, public Ratable{
-    int id; 
-    string name; 
-    int episodeRating; 
+class Episode : public Video, public Printable{
 
     public: 
-        Episode(int id, string name, int episodeRating);
-        int getId(); 
-        string getName(); 
-        int getRating(); 
+        Episode(int id, string name, int duration, string gender);
+        void printInformation(); 
 }; 
