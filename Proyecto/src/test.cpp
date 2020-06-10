@@ -15,11 +15,12 @@ int main(){
     Episode LS1E2("LA",40,"Comedy"); 
     Episode LS1E3("Cain",40,"Comedy"); 
     Episode LS2E1("Welcome Back", 42, "Comedy");
-    //Add to TvShow
+    //Add episodes to seasons
     L1.addEpisode(&LS1E1); 
     L1.addEpisode(&LS1E2); 
     L1.addEpisode(&LS1E3); 
     L2.addEpisode(&LS2E1); 
+    //Add seasons to TvShows
     L.addSeason(&L1); 
     L.addSeason(&L2);
     //Add Ratings
@@ -34,6 +35,7 @@ int main(){
     LS1E3.setRating(4); 
     LS2E1.setRating(5);
     //Print Info
+    cout << "This is the available content:" << endl; 
     a.printInformation(); 
     b.printInformation(); 
     L.printInformation(); 
@@ -41,6 +43,10 @@ int main(){
     L2.printInformation(); 
     LS1E1.printInformation(); 
     LS1E2.printInformation(); 
+    //Test Methods
+    cout << "The Id of "<< a.getName() << " is " << a.getId() << endl; 
+    cout << "The Id of "<< LS1E1.getName() << " is " <<LS1E1.getId() << endl;
+    cout << "The Id of "<< LS2E1.getName() << " is " <<LS2E1.getId() << endl;
 
     return 0; 
 }
