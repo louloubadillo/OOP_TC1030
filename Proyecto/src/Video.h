@@ -13,8 +13,7 @@ class Video: public Rateable{
         string gender; 
         double rating; 
         vector <int> grades; 
-        static int counter; //como hacerle para que se ponga autom el id
-
+        static int counter; 
     public: 
         Video(string name, int duration, string gender);
         int getId(); 
